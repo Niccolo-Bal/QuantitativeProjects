@@ -34,9 +34,10 @@ QuantitativeProjects/
 │   ├── fundamental_analysis/     # Fundamental Analysis API
 │   └── technical_analysis/       # Technical Analysis API
 │       ├── main.py               # FastAPI app instance
-│       ├── routers.py            # API endpoint definitions
+│       ├── data_fetcher.py       # Fetches and cleans data from yfinance
 │       ├── models.py             # Pydantic models for request/response
 │       ├── calculator.py         # Core logic for indicator calculations
+│       ├── test.py               # Test file for API (all commented out)
 │       └── README.md             # Specific setup & usage
 │
 ├── market_simulator/             # Market simulation engine
