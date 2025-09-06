@@ -23,31 +23,44 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 *   **Visualization:** (Planned) Matplotlib/Seaborn
 *   **Deployment:** (Planned) Docker
 
+
 ## 📁 Project Structure
 
+
+```text
 QuantitativeProjects/
-
-|-- apis/
-│   |-- dcf_valuation/ # DCF Valuation API
-│   |-- fundamental_analysis/ # Fundamental Analysis API
-│   -- **technical_analysis/** # Technical Analysis API │   |-- main.py # FastAPI app instance │   |-- routers.py # API endpoint definitions │   |-- models.py # Pydantic models for request/response │   |-- calculator.py # Core logic for indicator calculations │   -- README.md # Specific setup & usage
-|
-|-- market_simulator/ # Market simulation engine
-│   |-- engine.py
-│   |-- portfolio.py
-│   -- database.py # SQLite interaction | |-- **trading_bots/** # Trading strategy algorithms │   |-- **options/** # Options trading strategies │   |   |-- bot_conservative_options.py │   |   |-- bot_moderate_options.py │   |   -- bot_aggressive_options.py
-│   |-- stocks/ # Stock trading strategies
-│   |   |-- bot_conservative_stocks.py
-│   |   |-- bot_moderate_stocks.py
-│   |   -- bot_aggressive_stocks.py │   -- base_bot.py # Abstract base class for bots
-|
-|-- tests/ # Unit and integration tests
-|
-|-- .gitignore
-|-- requirements.txt
-|-- LICENSE
-|-- README.md # This file
-
+├── apis/                         # API modules
+│   ├── dcf_valuation/            # DCF Valuation API
+│   ├── fundamental_analysis/     # Fundamental Analysis API
+│   └── technical_analysis/       # Technical Analysis API
+│       ├── main.py               # FastAPI app instance
+│       ├── routers.py            # API endpoint definitions
+│       ├── models.py             # Pydantic models for request/response
+│       ├── calculator.py         # Core logic for indicator calculations
+│       └── README.md             # Specific setup & usage
+│
+├── market_simulator/             # Market simulation engine
+│   ├── engine.py
+│   ├── portfolio.py
+│   ├── database.py               # SQLite interaction
+│   └── trading_bots/             # Trading strategy algorithms
+│       ├── options/              # Options trading strategies
+│       │   ├── bot_conservative_options.py
+│       │   ├── bot_moderate_options.py
+│       │   └── bot_aggressive_options.py
+│       ├── stocks/               # Stock trading strategies
+│       │   ├── bot_conservative_stocks.py
+│       │   ├── bot_moderate_stocks.py
+│       │   └── bot_aggressive_stocks.py
+│       └── base_bot.py           # Abstract base class for bots
+│
+├── tests/                        # Unit and integration tests
+│
+├── .gitignore
+├── requirements.txt
+├── LICENSE
+└── README.md                     # This file
+```
 
 ## ⚡ Getting Started
 
@@ -86,19 +99,21 @@ Navigate to the API directory and start the Uvicorn server. For example, to run 
 cd apis/technical_analysis
 uvicorn main:app --reload
 ```
-📌 Project Status
+## 📌 Project Status
 
-    Current Phase: 🚧 Planning & Initial Development
+__Current Phase:__ 🚧 Planning & Initial Development
 
-    Next Steps: Development of the core Technical Analysis API module.
+__Next Steps:__ Development of the core Technical Analysis API module.
 
-🤝 Contributing
+## 🤝 Contributing
 
-This is a personal portfolio project. While primarily for my own learning, ideas, constructive feedback, and suggestions are always welcome. Please feel free to fork the repository and submit Pull Requests for any improvements.
-📜 License
+This is a personal portfolio project. While primarily for my own learning and to showcase my skils, ideas, constructive feedback, and suggestions are always welcome (especially from those of you a lot more experienced than me!). Please feel free to fork the repository and submit Pull Requests for any improvements.
+
+## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-👨‍💻 Author
+
+## 👨‍💻 Author
 
 Niccolò Balestriere
 
@@ -107,3 +122,5 @@ Niccolò Balestriere
     LinkedIn: https://www.linkedin.com/in/niccol%C3%B2-balestriere-7b9459295/
 
     GitHub: https://github.com/Niccolo-Bal
+
+    Website: Soon to come
