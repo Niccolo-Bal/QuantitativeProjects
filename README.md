@@ -26,33 +26,29 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 ## 📁 Project Structure
 
 QuantitativeProjects/
-│
-├── apis/
-│   ├── dcf_valuation/          # DCF Valuation API
-│   ├── fundamental_analysis/    # Fundamental Analysis API
-│   └── technical_analysis/      # Technical Analysis API
-│       ├── main.py             # FastAPI app instance
-│       ├── routers.py          # API endpoint definitions
-│       ├── models.py           # Pydantic models for request/response
-│       ├── calculator.py       # Core logic for indicator calculations
-│       └── README.md           # Specific setup & usage
-│
-├── market_simulator/           # Market simulation engine
-│   ├── engine.py
-│   ├── portfolio.py
-│   └── database.py             # SQLite interaction
-│
-├── trading_bots/               # Trading strategy algorithms
-│   ├── bot_conservative.py
-│   ├── bot_aggressive.py
-│   └── base_bot.py             # Abstract base class for bots
-│
-├── tests/                      # Unit and integration tests
-│
-├── .gitignore
-├── requirements.txt
-├── LICENSE
-└── README.md                   (This file)
+
+|-- apis/
+│   |-- dcf_valuation/ # DCF Valuation API
+│   |-- fundamental_analysis/ # Fundamental Analysis API
+│   -- **technical_analysis/** # Technical Analysis API │   |-- main.py # FastAPI app instance │   |-- routers.py # API endpoint definitions │   |-- models.py # Pydantic models for request/response │   |-- calculator.py # Core logic for indicator calculations │   -- README.md # Specific setup & usage
+|
+|-- market_simulator/ # Market simulation engine
+│   |-- engine.py
+│   |-- portfolio.py
+│   -- database.py # SQLite interaction | |-- **trading_bots/** # Trading strategy algorithms │   |-- **options/** # Options trading strategies │   |   |-- bot_conservative_options.py │   |   |-- bot_moderate_options.py │   |   -- bot_aggressive_options.py
+│   |-- stocks/ # Stock trading strategies
+│   |   |-- bot_conservative_stocks.py
+│   |   |-- bot_moderate_stocks.py
+│   |   -- bot_aggressive_stocks.py │   -- base_bot.py # Abstract base class for bots
+|
+|-- tests/ # Unit and integration tests
+|
+|-- .gitignore
+|-- requirements.txt
+|-- LICENSE
+|-- README.md # This file
+
+
 ## ⚡ Getting Started
 
 ### Prerequisites
@@ -89,7 +85,7 @@ Navigate to the API directory and start the Uvicorn server. For example, to run 
 ```bash
 cd apis/technical_analysis
 uvicorn main:app --reload
-
+```
 📌 Project Status
 
     Current Phase: 🚧 Planning & Initial Development
