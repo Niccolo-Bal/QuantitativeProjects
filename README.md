@@ -10,8 +10,8 @@ This repository is a comprehensive suite of tools for quantitative finance and a
     *   **DCF Valuation API:** Calculates the intrinsic value of a publicly traded company using a Discounted Cash Flow model. Inputs a ticker symbol and returns a detailed valuation breakdown.
     *   **Fundamental Analysis API:** Fetches balance sheet, income statement, and cash flow data from Yahoo Finance to calculate and analyze key financial ratios (P/E, P/B, ROE, Debt/Equity, etc.).
     *   **Technical Analysis API:** Processes historical price data to generate and interpret popular technical indicators (SMA, EMA, RSI, MACD) for a given security.
-*   **Market Simulator:** A virtual trading environment that uses historical market data to backtest trading strategies without risking real capital. Tracks portfolio value, cash balance, and trade history (stored in SQLite).
-*   **Algorithmic Trading Bots:** A collection of bots with varying risk profiles (e.g., Conservative, Moderate, Aggressive) designed to execute trades within the simulated market based on predefined logic and signals from the APIs.
+*   **Market Simulator:** A virtual trading environment that tracks portfolio value, cash balance, and trade history (stored in SQLite). Planned to use historical market data to backtest trading strategies without risking real capital.
+*   **Algorithmic Trading Bots:** A collection of bots with varying risk profiles (e.g., Conservative, Moderate, Aggressive) designed to execute trades within a simulated market based on predefined logic and signals from the APIs.
 
 ## 🛠️ Tech Stack
 
