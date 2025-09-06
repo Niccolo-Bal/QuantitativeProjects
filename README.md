@@ -19,7 +19,7 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 *   **APIs & Web Framework:** FastAPI, Pydantic
 *   **Data Processing & Analysis:** Pandas, NumPy
 *   **Financial Data:** yfinance
-*   **Database:** SQLite
+*   **Database:** (Planned) SQLite
 *   **Visualization:** (Planned) Matplotlib/Seaborn
 *   **Deployment:** (Planned) Docker
 
