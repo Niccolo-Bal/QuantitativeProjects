@@ -107,7 +107,7 @@ __Next Steps:__ Development of the core Technical Analysis API module.
 
 ## 🤝 Contributing
 
-This is a personal portfolio project. While primarily for my own learning and to showcase my skils, ideas, constructive feedback, and suggestions are always welcome (especially from those of you a lot more experienced than me!). Please feel free to fork the repository and submit Pull Requests for any improvements.
+This is a personal portfolio project. While primarily for my own learning and to showcase my skils, ideas, constructive feedback, and suggestions are always welcome. Feel free to fork the repository and submit Pull Requests for any improvements.
 
 ## 📜 License
 
