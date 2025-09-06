@@ -103,7 +103,7 @@ uvicorn main:app --reload
 
 __Current Phase:__ 🚧 Planning & Initial Development
 
-__Next Steps:__ Development of the core Technical Analysis API module.
+__Next Steps:__ Development of the core DCF API module.
 
 ## 🤝 Contributing
 
@@ -117,10 +117,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Niccolò Balestriere
 
-    Email: niccolo.balestriere@gmail.com
+Email: niccolo.balestriere@gmail.com
 
-    LinkedIn: https://www.linkedin.com/in/niccol%C3%B2-balestriere-7b9459295/
+LinkedIn: https://www.linkedin.com/in/niccol%C3%B2-balestriere-7b9459295/
 
-    GitHub: https://github.com/Niccolo-Bal
+GitHub: https://github.com/Niccolo-Bal
 
-    Website: Soon to come
+Website: Soon to come
