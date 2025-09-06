@@ -62,7 +62,7 @@ QuantitativeProjects/
 └── README.md                     # This file
 ```
 
-## ⚡ Getting Started
+## ⚡ Set Up
 
 ### Prerequisites
 - Python 3.8 or higher
