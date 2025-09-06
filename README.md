@@ -24,35 +24,36 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 *   **Deployment:** (Planned) Docker
 
 ## 📁 Project Structure
+
+```text
 QuantitativeProjects/
 │
-├── 📁 apis/
-│ ├── 📁 dcf_valuation/ # DCF Valuation API
-│ ├── 📁 fundamental_analysis/ # Fundamental Analysis API
-│ └── 📁 technical_analysis/ # Technical Analysis API
-│ ├── main.py # FastAPI app instance
-│ ├── routers.py # API endpoint definitions
-│ ├── models.py # Pydantic models for request/response
-│ ├── calculator.py # Core logic for indicator calculations
-│ └── README.md # Specific setup & usage
+├── apis/
+│   ├── dcf_valuation/          # DCF Valuation API
+│   ├── fundamental_analysis/    # Fundamental Analysis API
+│   └── technical_analysis/      # Technical Analysis API
+│       ├── main.py             # FastAPI app instance
+│       ├── routers.py          # API endpoint definitions
+│       ├── models.py           # Pydantic models for request/response
+│       ├── calculator.py       # Core logic for indicator calculations
+│       └── README.md           # Specific setup & usage
 │
-├── 📁 market_simulator/ # Market simulation engine
-│ ├── engine.py
-│ ├── portfolio.py
-│ └── database.py # SQLite interaction
+├── market_simulator/           # Market simulation engine
+│   ├── engine.py
+│   ├── portfolio.py
+│   └── database.py             # SQLite interaction
 │
-├── 📁 trading_bots/ # Trading strategy algorithms
-│ ├── bot_conservative.py
-│ ├── bot_aggressive.py
-│ └── base_bot.py # Abstract base class for bots
+├── trading_bots/               # Trading strategy algorithms
+│   ├── bot_conservative.py
+│   ├── bot_aggressive.py
+│   └── base_bot.py             # Abstract base class for bots
 │
-├── 📁 tests/ # Unit and integration tests
+├── tests/                      # Unit and integration tests
 │
 ├── .gitignore
 ├── requirements.txt
 ├── LICENSE
-└── README.md (This file)
-
+└── README.md                   (This file)
 ## ⚡ Getting Started
 
 ### Prerequisites
