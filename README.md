@@ -101,9 +101,11 @@ uvicorn main:app --reload
 ```
 ## 📌 Project Status
 
-__Current Phase:__ 🚧 Planning & Initial Development
+__Last Completed ✅:__ Planning & Initial Development.
 
-__Next Steps:__ Development of the core DCF API module.
+__Current Phase 🚧:__ Development of DCF calculations and core logic
+
+__Next Steps 📝:__ Integration of DCF model into FastAPI framework
 
 ## 🤝 Contributing
 
