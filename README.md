@@ -25,7 +25,6 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 
 ## 📁 Project Structure
 
-```text
 QuantitativeProjects/
 │
 ├── apis/
