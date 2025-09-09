@@ -84,7 +84,7 @@ QuantitativeProjects/
     cd QuantitativeProjects
     ```
 
-2.  **(Recommended) Create a virtual environment:**
+2.  **(Optional) Create a virtual environment:**
     ```bash
     python -m venv venv
     # On Windows:
