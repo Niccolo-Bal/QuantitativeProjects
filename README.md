@@ -126,7 +126,7 @@ __Next Steps 📝:__ Integration of assumptions and initial testing of DCF model
 
 ## 🤝 Contributing
 
-This is a personal portfolio project. While primarily for my own learning and to showcase my skills, ideas, constructive feedback, and suggestions are always welcome. Feel free to fork the repository and submit Pull Requests for any improvements.
+This is a personal portfolio project. While primarily for my own learning and to showcase my skills, I am new to both finance and data science, so ideas, constructive feedback, and suggestions are always welcome. Feel free to fork the repository and submit Pull Requests for any improvements.
 
 ## 📜 License
 
