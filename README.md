@@ -118,7 +118,7 @@ python engine.py
 
 ## 📌 Project Status
 
-__Last Completed ✅:__ Planning & Initial Development.
+__Last Completed ✅:__ Planning, Initial Development & primary README.md file.
 
 __Current Phase 🚧:__ Development of DCF calculations and core logic.
 
