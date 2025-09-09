@@ -1,22 +1,21 @@
 # QuantitativeProjects
 
-A modular Python-based platform for extracting financial data, performing fundamental and technical analysis via API, and simulating algorithmic trading strategies.
+A modular Python-based platform for extracting financial data, performing fundamental and technical analysis, and simulating algorithmic trading strategies through local financial modeling tools.
 
 ## 🚀 Features
 
 This repository is a comprehensive suite of tools for quantitative finance and algorithmic trading. It includes:
 
-*   **RESTful APIs (Built with FastAPI):**
-    *   **DCF Valuation API:** Calculates the intrinsic value of a publicly traded company using a Discounted Cash Flow model. Inputs a ticker symbol and returns a detailed valuation breakdown.
-    *   **Fundamental Analysis API:** Fetches balance sheet, income statement, and cash flow data from Yahoo Finance to calculate and analyze key financial ratios (P/E, P/B, ROE, Debt/Equity, etc.).
-    *   **Technical Analysis API:** Processes historical price data to generate and interpret popular technical indicators (SMA, EMA, RSI, MACD) for a given security.
-*   **Market Simulator:** A virtual trading environment that tracks portfolio value, cash balance, and trade history (stored in SQLite). Planned to use historical market data to backtest trading strategies without risking real capital.
-*   **Algorithmic Trading Bots:** A collection of bots with varying risk profiles (e.g., Conservative, Moderate, Aggressive) designed to execute trades within a simulated market based on predefined logic and signals from the APIs.
+*   **Financial Modeling Tools:**
+    *   **DCF Valuation Model:** Calculates the intrinsic value of a publicly traded company using a Discounted Cash Flow model. Inputs a ticker symbol and returns a detailed valuation breakdown.
+    *   **Fundamental Analysis Model:** Fetches balance sheet, income statement, and cash flow data from Yahoo Finance to calculate and analyze key financial ratios (P/E, P/B, ROE, Debt/Equity, etc.).
+    *   **Technical Analysis Model:** Processes historical price data to generate and interpret popular technical indicators (SMA, EMA, RSI, MACD) for a given security.
+*   **Market Simulator:** A virtual trading environment that tracks portfolio value, cash balance, and trade history (stored in SQLite). Uses historical market data to backtest trading strategies without risking real capital.
+*   **Algorithmic Trading Bots:** A collection of bots with varying risk profiles (e.g., Conservative, Moderate, Aggressive) designed to execute trades within a simulated market based on predefined logic and signals from the financial models.
 
 ## 🛠️ Tech Stack
 
 *   **Language:** Python 3.8+
-*   **APIs & Web Framework:** FastAPI, Pydantic
 *   **Data Processing & Analysis:** Pandas, NumPy
 *   **Financial Data:** yfinance
 *   **Database:** (Planned) SQLite
@@ -29,16 +28,24 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 
 ```text
 QuantitativeProjects/
-├── apis/                         # API modules
-│   ├── dcf_valuation/            # DCF Valuation API
-│   ├── fundamental_analysis/     # Fundamental Analysis API
-│   └── technical_analysis/       # Technical Analysis API
-│       ├── main.py               # FastAPI app instance
+├── models/                       # Finance models
+│   ├── dcf_valuation/            
+│   │   ├── dcf_model.py          # DCF valuation calculations
+│   │   ├── data_fetcher.py       # Financial data retrieval
+│   │   ├── models.py             # Data models and structures
+│   │   └── README.md             
+│   ├── fundamental_analysis/     
+│   │   ├── fundamental_model.py  # Fundamental ratio calculations
+│   │   ├── data_fetcher.py       # Financial statement data
+│   │   ├── models.py             # Data models and structures
+│   │   └── README.md             
+│   └── technical_analysis/       
+│       ├── technical_model.py    # Technical indicator calculations
 │       ├── data_fetcher.py       # Fetches and cleans data from yfinance
-│       ├── models.py             # Pydantic models for request/response
+│       ├── models.py             # Data models for indicators
 │       ├── calculator.py         # Core logic for indicator calculations
-│       ├── test.py               # Test file for API (all commented out)
-│       └── README.md             # Specific setup & usage
+│       ├── test.py               # Test file for models (all commented out)
+│       └── README.md             
 │
 ├── market_simulator/             # Market simulation engine
 │   ├── engine.py
@@ -53,7 +60,7 @@ QuantitativeProjects/
 │       │   ├── bot_conservative_stocks.py
 │       │   ├── bot_moderate_stocks.py
 │       │   └── bot_aggressive_stocks.py
-│       └── base_bot.py           # Abstract base class for bots
+│       └── README.md
 │
 ├── tests/                        # Unit and integration tests
 │
@@ -93,24 +100,33 @@ QuantitativeProjects/
 
 ### Usage
 
-#### Running the APIs
-Navigate to the API directory and start the Uvicorn server. For example, to run the Technical Analysis API:
+#### Running the Financial Models
+Navigate to the specific model directory and run the Python scripts directly. For example, to use the Technical Analysis model:
 
 ```bash
-cd apis/technical_analysis
-uvicorn main:app --reload
+cd models/technical_analysis
+python technical_model.py
 ```
+
+#### Running Market Simulations
+To start the market simulator:
+
+```bash
+cd market_simulator
+python engine.py
+```
+
 ## 📌 Project Status
 
 __Last Completed ✅:__ Planning & Initial Development.
 
-__Current Phase 🚧:__ Development of DCF calculations and core logic
+__Current Phase 🚧:__ Development of DCF calculations and core logic.
 
-__Next Steps 📝:__ Integration of DCF model into FastAPI framework
+__Next Steps 📝:__ Integration of assumptions and initial testing of DCF model.
 
 ## 🤝 Contributing
 
-This is a personal portfolio project. While primarily for my own learning and to showcase my skils, ideas, constructive feedback, and suggestions are always welcome. Feel free to fork the repository and submit Pull Requests for any improvements.
+This is a personal portfolio project. While primarily for my own learning and to showcase my skills, ideas, constructive feedback, and suggestions are always welcome. Feel free to fork the repository and submit Pull Requests for any improvements.
 
 ## 📜 License
 
