@@ -20,7 +20,6 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 *   **Financial Data:** yfinance
 *   **Database:** (Planned) SQLite
 *   **Visualization:** (Planned) Matplotlib/Seaborn
-*   **Deployment:** (Planned) Docker
 
 
 ## Project Structure
