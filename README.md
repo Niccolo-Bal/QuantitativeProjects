@@ -13,7 +13,7 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 *   **Market Simulator:** A virtual trading environment that tracks portfolio value, cash balance, and trade history (stored in SQLite). Uses historical market data to backtest trading strategies without risking real capital.
 *   **Algorithmic Trading Bots:** A collection of bots with varying risk profiles (e.g., Conservative, Moderate, Aggressive) designed to execute trades within a simulated market based on predefined logic and signals from the financial models.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 *   **Language:** Python 3.8+
 *   **Data Processing & Analysis:** Pandas, NumPy
@@ -23,7 +23,7 @@ This repository is a comprehensive suite of tools for quantitative finance and a
 *   **Deployment:** (Planned) Docker
 
 
-## 📁 Project Structure
+## Project Structure
 
 
 ```text
@@ -70,11 +70,11 @@ QuantitativeProjects/
 └── README.md                     # This file
 ```
 
-## ⚡ Set Up
+## Set Up
 
 ### Prerequisites
 - Python 3.8 or higher
-- `pip` (Python package installer)
+- pip or conda
 
 ### Installation & Setup
 
@@ -124,15 +124,15 @@ __Current Phase 🚧:__ Development of DCF calculations and core logic.
 
 __Next Steps 📝:__ Integration of assumptions and initial testing of DCF model.
 
-## 🤝 Contributing
+## Contributing
 
 This is a personal portfolio project. While primarily for my own learning and to showcase my skills, I am new to both finance and data science, so ideas, constructive feedback, and suggestions are always welcome. Feel free to fork the repository and submit Pull Requests for any improvements.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## 👨‍💻 Author
+## Author
 
 Niccolò Balestriere
 
